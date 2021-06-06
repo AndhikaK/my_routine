@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:routine/components/goal_component.dart';
 
 class RoutineScreen extends StatefulWidget {
   const RoutineScreen({key}) : super(key: key);
@@ -16,7 +17,10 @@ class _RoutineScreenState extends State<RoutineScreen> {
         elevation: 0,
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          print(MediaQuery.of(context).size.width);
+          print(MediaQuery.of(context).size.height);
+        },
         child: Icon(Icons.add),
       ),
       body: SingleChildScrollView(
@@ -99,6 +103,22 @@ class _RoutineScreenState extends State<RoutineScreen> {
                     ]),
                   )
                 ],
+              ),
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.all(5),
+              child: Card(
+                child: Column(
+                  children: [
+                    GoalComponent(
+                      goalStatus: 1,
+                      goalTitle: "Playing Genshin",
+                      goalSchedule: "Everyday",
+                      goalTime: "2:00:00",
+                    ),
+                  ],
+                ),
               ),
             )
           ],

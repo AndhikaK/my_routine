@@ -13,7 +13,7 @@ class _RoutineScreenState extends State<RoutineScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Routine'),
+        title: Center(child: Text('My Routine')),
         elevation: 0,
       ),
       floatingActionButton: FloatingActionButton(
@@ -67,6 +67,13 @@ class _RoutineScreenState extends State<RoutineScreen> {
               child: Row(
                 children: [
                   Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        right: BorderSide(
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ),
                     padding: EdgeInsets.only(top: 15, bottom: 15),
                     width: MediaQuery.of(context).size.width / 2,
                     child: Column(children: [
@@ -108,11 +115,35 @@ class _RoutineScreenState extends State<RoutineScreen> {
             Container(
               width: MediaQuery.of(context).size.width,
               padding: EdgeInsets.all(5),
-              child: Card(
+              child: Container(
                 child: Column(
                   children: [
                     GoalComponent(
+                      goalStatus: 2,
+                      goalTitle: "Playing Genshin",
+                      goalSchedule: "Everyday",
+                      goalTime: "2:00:00",
+                    ),
+                    GoalComponent(
                       goalStatus: 1,
+                      goalTitle: "Playing Genshin",
+                      goalSchedule: "Everyday",
+                      goalTime: "2:00:00",
+                    ),
+                    GoalComponent(
+                      goalStatus: 0,
+                      goalTitle: "Playing Genshin",
+                      goalSchedule: "Everyday",
+                      goalTime: "2:00:00",
+                    ),
+                    GoalComponent(
+                      goalStatus: 0,
+                      goalTitle: "Playing Genshin",
+                      goalSchedule: "Everyday",
+                      goalTime: "2:00:00",
+                    ),
+                    GoalComponent(
+                      goalStatus: 0,
                       goalTitle: "Playing Genshin",
                       goalSchedule: "Everyday",
                       goalTime: "2:00:00",

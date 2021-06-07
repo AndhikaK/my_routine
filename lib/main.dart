@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:routine/screens/main_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(MyApp());
 }
 

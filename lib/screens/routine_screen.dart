@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:routine/components/goal_component.dart';
 
 class RoutineScreen extends StatefulWidget {
   const RoutineScreen({key}) : super(key: key);
@@ -117,38 +116,7 @@ class _RoutineScreenState extends State<RoutineScreen> {
               padding: EdgeInsets.all(5),
               child: Container(
                 child: Column(
-                  children: [
-                    GoalComponent(
-                      goalStatus: 2,
-                      goalTitle: "Playing Genshin",
-                      goalSchedule: "Everyday",
-                      goalTime: "2:00:00",
-                    ),
-                    GoalComponent(
-                      goalStatus: 1,
-                      goalTitle: "Playing Genshin",
-                      goalSchedule: "Everyday",
-                      goalTime: "2:00:00",
-                    ),
-                    GoalComponent(
-                      goalStatus: 0,
-                      goalTitle: "Playing Genshin",
-                      goalSchedule: "Everyday",
-                      goalTime: "2:00:00",
-                    ),
-                    GoalComponent(
-                      goalStatus: 0,
-                      goalTitle: "Playing Genshin",
-                      goalSchedule: "Everyday",
-                      goalTime: "2:00:00",
-                    ),
-                    GoalComponent(
-                      goalStatus: 0,
-                      goalTitle: "Playing Genshin",
-                      goalSchedule: "Everyday",
-                      goalTime: "2:00:00",
-                    ),
-                  ],
+                  children: [],
                 ),
               ),
             )
